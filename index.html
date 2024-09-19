@@ -8,6 +8,35 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+<div class="container">
+    <div class="sidebar">
+        <h2>New Book</h2>
+        <form>
+            <ul>
+                <li><label for="title">Title</label></li>
+                <li><input type="text" id="title" name="title"></li>
+            </ul>
+            <ul>
+                <li><label for="author">Author</label></li>
+                <li><input type="text" id="author" name="author"></li>
+            </ul>
+            <ul>
+                <li><label for="pages">No. of Pages</label></li>
+                <li><input type="number" id="pages" name="pages"></li>
+            </ul>
+            <ul>
+                <li><label for="read">Read</label></li>
+                <li><input type="radio" id="read" value="Read" name="status"></li>
+                <li><label for="unread">Unread</label></li>
+                <li><input type="radio" id="unread" value="Unread" name="status"></li>
+            </ul>
+            <button class="addbook">Add to Library</button>
+        </form>
+    </div>
+    <div class="main">
+        <h2>My Library</h2>
+        <div class="bookShelves"></div>
+    </div>
+</div>
 </body>
 </html>
